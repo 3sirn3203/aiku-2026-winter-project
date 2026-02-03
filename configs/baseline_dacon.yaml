@@ -12,4 +12,4 @@ training:
   num_gpus: 1
   presets: "best_quality"
   fold_fitting_strategy: "sequential_local"
-  problem_type: "classification"
+  problem_type: "binary"

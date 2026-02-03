@@ -11,7 +11,7 @@ def load_config(config_path):
 def main():
     # Parse arguments
     parser = argparse.ArgumentParser(description='AutoGluon Baseline Script')
-    parser.add_argument('--config', type=str, default='configs/baseline.yaml', help='Path to config file')
+    parser.add_argument('--config', type=str, default='configs/baseline_dacon.yaml', help='Path to config file')
     args = parser.parse_args()
 
     # Load config
