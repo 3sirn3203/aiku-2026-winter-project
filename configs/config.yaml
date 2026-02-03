@@ -1,0 +1,25 @@
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  data_submissions: data/submissions
+  generated_scripts: generated/scripts
+  generated_reports: generated/reports
+
+task:
+  input_file: ""
+  target_column: ""
+  problem_type: ""
+
+agent:
+  max_iters: 5
+  timeout_sec: 300
+  execute_enabled: true
+
+model:
+  proxy_type: xgboost
+  metric: rmse
+
+llm:
+  provider: google
+  model: gemini-1.5-flash
+  temperature: 0.2
