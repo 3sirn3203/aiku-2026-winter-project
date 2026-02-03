@@ -1,0 +1,15 @@
+data:
+  train_path: "./data_kaggle/train.csv"
+  test_path: "./data_kaggle/test.csv"
+  submission_dir: "./data_kaggle/submissions"
+  output_path: "./data_kaggle/submissions/autogluon_submission.csv"
+
+model:
+  eval_metric: "root_mean_squared_error"
+  label: "price"
+
+training:
+  num_gpus: 1
+  presets: "best_quality"
+  fold_fitting_strategy: "sequential_local"
+  problem_type: "regression"

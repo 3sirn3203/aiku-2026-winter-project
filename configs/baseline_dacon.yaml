@@ -1,0 +1,15 @@
+data:
+  train_path: "./data_dacon/train.csv"
+  test_path: "./data_dacon/test.csv"
+  submission_dir: "./data_dacon/submissions"
+  output_path: "./data_dacon/submissions/autogluon_submission.csv"
+
+model:
+  eval_metric: "f1"
+  label: "completed"
+
+training:
+  num_gpus: 1
+  presets: "best_quality"
+  fold_fitting_strategy: "sequential_local"
+  problem_type: "classification"
